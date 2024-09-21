@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- daisy UI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- tailwind css CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css link here -->
+     <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+    
+
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard bg-gray-100 artboard-demo phone-1">
+
+<!-- * Available Balance --------------- -->
+                <div id="Balance-box-bg" class="stats shadow-md flex items-center justify-center px-5 py-2">
+                    <div>
+                        <a href="./index.html"><img src="./Add Money.png" alt=""></a>
+                    </div>
+                    
+                    <div class="stat border-none p-2">
+                        <div id="Available-balance" class="stat-value">9400</div>
+                        <div class="stat-desc">Available Balance</div>
+                    </div>
+                </div>
+                <!-- divider -->
+                <div class="divider"></div>
+                    
+<!-- * add money button and cash out button ---------->
+                <div class="pb-5">
+                    <button id="add-money-show-btn" class="btn bg-blue-600 hover:bg-blue-700 text-white">Add Money</button>
+                    <button id="cash-out-show-btn" class="btn bg-blue-600 hover:bg-blue-700 text-white">Cash Out</button>
+                </div> 
+    
+<!-- *login from add money here --------------------->
+                <form id="add-Money-Form" class="bg-white rounded-lg shadow-lg px-8 py-5 ">
+                <!-- input phone number -->
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Amount</span>
+                        </label>
+                        <input id="input-add-amount" type="text"placeholder="Add Amount" autocomplete="off" class="input focus:outline-none input-bordered" required />
+                    </div>
+                <!-- input pin number -->
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Pin Number:</span>
+                        </label>
+                        <input id="add-pin-Number" type="password"placeholder="Pin Number: 123" autocomplete="off"  class="input focus:outline-none input-bordered" required/>
+                        </label>
+                    </div>
+
+                    <div class="form-control mt-6">
+                        <button id="add-money-btn"class="btn btn-primary">Add Money</button>
+                    </div>
+
+                </form>
+
+<!-- *login from cash out here --------------------->
+                <form id="cash-Out-Form"class="hidden bg-blue-100 rounded-lg shadow-lg px-8 py-5 ">
+                    <!-- input phone number -->
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-bold">Cash Out</span>
+                            </label>
+                            <input id="input-cash-amount" type="text"placeholder="Add Amount" autocomplete="off" class="input focus:outline-none input-bordered" required />
+                        </div>
+                    <!-- input pin number -->
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text font-bold">Pin Number</span>
+                            </label>
+                            <input id="cash-pin-Number" type="password"placeholder="Pin Number: 123" autocomplete="off"  class="input focus:outline-none input-bordered" required/>
+                            </label>
+                        </div>
+
+                        <div class="form-control mt-6">
+                            <button id="cash-out-btn"class="btn btn-primary">Cash Out</button>
+                        </div>
+
+                </form>
+
+              </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="./app file/addMoney.js"></script>
+    <script src="./app file/cashOut.js"></script>
+</body>
+</html>

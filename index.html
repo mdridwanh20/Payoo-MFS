@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- daisy UI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- tailwind css CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css link here -->
+     <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    
+
+<main class="flex justify-center">
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard bg-gray-100 artboard-demo phone-1">
+
+            <div>
+                <a href=""><img class="w-36" src="./payoo.png" alt=""></a>
+            </div>
+
+            <!-- add money button and cash out button -->
+            <!-- <div class="pb-5">
+                <button class="btn bg-blue-600 hover:bg-blue-700 text-white">Add Money</button>
+                <button class="btn bg-blue-600 hover:bg-blue-700 text-white">Cash Out</button>
+            </div> -->
+
+<!-- login from here --------------------->
+                <form class="bg-white rounded-lg shadow-lg px-8 py-5 ">
+                <!-- input phone number -->
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Mobile Number</span>
+                        </label>
+                        <input id="phone-Number" type="text"placeholder="Your Phone: 5" autocomplete="off" class="input focus:outline-none input-bordered" required />
+                    </div>
+                <!-- input pin number -->
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Pin Number:123</span>
+                        </label>
+                        <input id="pin-Number" type="password"placeholder="Pin Number: 123" autocomplete="off"  class="input focus:outline-none input-bordered" required/>
+                        </label>
+                    </div>
+
+                    <div class="form-control mt-6">
+                        <button id="log-in-btn" class="btn btn-primary">Login</button>
+                    </div>
+
+                </form>
+
+          </div>
+        </div>
+    </div>
+</main>
+
+
+<script src="./app file/index.js"></script>
+
+</body>
+</html>
